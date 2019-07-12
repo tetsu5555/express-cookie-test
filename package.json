@@ -1,0 +1,8 @@
+{
+  "name": "jsonAPI",
+  "main": "server.js",
+  "dependencies": {
+    "cookie-parser": "^1.4.4",
+    "express": "~4.0.0"
+  }
+}
