@@ -19,6 +19,5 @@ node server.js
 ```
 
 ## memo
-httponlyにするとhttp以外からcookieにアクセスできない
-httponlyにしない場合は、document.cookieでcookieの値が見れる
+https://scrapbox.io/for-share/Cookie
 
