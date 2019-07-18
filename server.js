@@ -2,6 +2,9 @@
 
 // 定数のimport
 var cons = require('./myconstants.js');
+const users = require("./jsons/users.json");
+const shops = require("./jsons/shops.json");
+
 // 必要なパッケージの読み込み
 var express = require('express');
 var app = express();
@@ -53,7 +56,7 @@ app.get('/v1/spaces', function (req, res) {
 })
 
 app.get('/v1/shops', function (req, res) {
-    res.json(cons.shops)
+    res.json(shops)
 })
 
 
