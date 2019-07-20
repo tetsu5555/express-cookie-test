@@ -1,40 +1,43 @@
 // server.js
 
-// 定数のimport
+// =======================
+// import constants
+// =======================
 var cons = require('./myconstants.js');
-const users = require("./jsons/users.json");
-const shops = require("./jsons/shops.json");
-const spaces = require("./jsons/spaces.json");
+var users = require("./jsons/users.json");
+var shops = require("./jsons/shops.json");
+var spaces = require("./jsons/spaces.json");
 
-// 必要なパッケージの読み込み
-var express = require('express');
-var app = express();
-var cors = require('cors');
+// =======================
+// packages
+// =======================
+const express = require('express');
+const app = express();
+const cors = require('cors');
 const bodyParser = require("body-parser");
-var cookieParser = require('cookie-parser');
+const cookieParser = require('cookie-parser');
+
+
+// =======================
+// middlewares
+// =======================
+app.use(cookieParser());
+app.use(cors())
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
 
-
-// Cookieを使用するための記述
-app.use(cookieParser());
-// for cors
-app.use(cors())
-
-
-
-
-// 3001番を指定
-var port = process.env.PORT || 3001;
+// =======================
+// variables
+// =======================
+const port = process.env.PORT || 3001;
 // expressでAPIサーバを使うための準備
 // var router = express.Router();
 
 
-
-
-
-// route & handler
+// =======================
+// routes
+// =======================
 app.get('/', function (req, res) {
     res.json({
         message: 'ok'
@@ -99,7 +102,8 @@ app.get('/v1/users/:id', (req, res) => {
 })
 
 
-
-//サーバ起動
+// =======================
+// start server
+// =======================
 app.listen(port);
 console.log('listen on port ' + port);
