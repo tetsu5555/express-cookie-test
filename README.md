@@ -37,7 +37,7 @@ node factory/<js-file-name>
 - server.jsにroutesの下に処理を記述
 
 ## models api
-- find(key string, target any): Array
+- first(key string, target any): Object
     - keyとtargetが等しくなる最初の要素を返す
 - find(key string, target any): Array
     - keyとtargetが等しくなる要素の配列を返す
