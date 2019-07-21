@@ -9,6 +9,21 @@ var shops = require("./jsons/shops.json");
 var spaces = require("./jsons/spaces.json");
 
 // =======================
+// import models
+// =======================
+var Shop = require("./model/shops")
+var User = require("./model/users")
+var Space = require("./model/spaces")
+
+// =======================
+// initialize models
+// =======================
+// TODO: test models
+const ShopModel = new Shop(shops)
+const UserModel = new User(users)
+const SpaceModel = new Space(spaces)
+
+// =======================
 // packages
 // =======================
 const express = require('express');
@@ -58,46 +73,41 @@ app.get('/cookietest', function (req, res) {
 });
 
 app.get('/v1/spaces', function (req, res) {
-    res.json(cons.spaces)
+    const spaces = SpaceModel.all()
+    res.json(spaces)
 })
 
 app.get('/v1/spaces/:id', function (req, res) {
     const id = req.params.id;
-    const space = spaces.filter(space => {
-        return space.id == id;
-    });
-    res.json(space[0]);
+    const space = SpaceModel.first("id", id)
+    res.json(space);
 })
 
-app.get('/v1/shops/:id/spaces', (req, res) => {
-    const id = req.params.id;
-    const res_spaces = spaces.filter(space => {
-        return space.shop_id == id;
-    });
-    res.json(res_spaces);
+app.get('/v1/shops/:shop_id/spaces', (req, res) => {
+    const shop_id = req.params.shop_id;
+    const spaces = SpaceModel.find("shop_id", shop_id)
+    res.json(spaces);
 })
 
 app.get('/v1/shops', function (req, res) {
+    const shops = ShopModel.all()
     res.json(shops)
 })
 
 app.get('/v1/shops/:id', (req, res) => {
     const id = req.params.id;
-    const shop = shops.filter(shop => {
-        return shop.id == id;
-    });
-    res.json(shop[0]);
+    const shop = ShopModel.first("id", id)
+    res.json(shop);
 })
 
 app.get('/v1/users', function (req, res) {
+    const users = UserModel.all()
     res.json(users)
 })
 
 app.get('/v1/users/:id', (req, res) => {
     const id = req.params.id;
-    const user = users.filter(user => {
-        return user.id == id;
-    });
+    const user = UserModel.first("id", id)
     res.json(user);
 })
 
