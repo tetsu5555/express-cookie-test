@@ -1,15 +1,18 @@
+// enable module-alias package
+require('module-alias/register')
+
 const { Router } = require('express')
 const router = Router()
 
 // =======================
 // import constants
 // =======================
-var spaces = require("../jsons/spaces.json");
+var spaces = require("@jsons/spaces.json");
 
 // =======================
 // import models
 // =======================
-var Space = require("../model/spaces")
+var Space = require("@model/spaces")
 
 // =======================
 // initialize models

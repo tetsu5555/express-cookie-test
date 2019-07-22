@@ -1,6 +1,7 @@
+// enable module-alias package
+require('module-alias/register')
 
 const { Router } = require('express')
-
 const router = Router()
 
 // =======================
