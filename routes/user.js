@@ -1,7 +1,7 @@
 const { Router } = require('express')
 const router = Router()
 
-var users_handler = require("@handlers/users_handler")
+var users_handler = require("../handlers/users_handler")
 
 // =======================
 // defined routes

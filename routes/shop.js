@@ -1,7 +1,7 @@
 const { Router } = require('express')
 const router = Router()
 
-var shops_handler = require("@handlers/shops_handler")
+var shops_handler = require("../handlers/shops_handler")
 
 // =======================
 // defined routes

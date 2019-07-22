@@ -21,6 +21,6 @@ for (let i = 0; i < maxLength; i++) {
     })
 }
 
-fs.writeFile('@mocks_jsons/users.json', JSON.stringify(users), () => {
+fs.writeFile('../jsons/users.json', JSON.stringify(users), () => {
     console.log("users.jsonを作成しました");
 });

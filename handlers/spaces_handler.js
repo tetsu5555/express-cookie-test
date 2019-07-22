@@ -1,12 +1,12 @@
 // =======================
 // import constants
 // =======================
-var spaces = require("@mocks_jsons/spaces.json");
+var spaces = require("../mocks/jsons/spaces.json");
 
 // =======================
 // import models
 // =======================
-var Space = require("@mock_models/spaces")
+var Space = require("../mocks/models/spaces")
 
 // =======================
 // initialize models

@@ -1,12 +1,12 @@
 // =======================
 // import constants
 // =======================
-var users = require("@mocks_jsons/users.json");
+var users = require("../mocks/jsons/users.json");
 
 // =======================
 // import models
 // =======================
-var User = require("@mock_models/users")
+var User = require("../mocks/models/users")
 
 // =======================
 // initialize models

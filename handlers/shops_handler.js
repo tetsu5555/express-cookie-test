@@ -1,14 +1,14 @@
 // =======================
 // import constants
 // =======================
-var shops = require("@mocks_jsons/shops.json");
-var spaces = require("@mocks_jsons/spaces.json");
+var shops = require("../mocks/jsons/shops.json");
+var spaces = require("../mocks/jsons/spaces.json");
 
 // =======================
 // import models
 // =======================
-var Shop = require("@mock_models/shops")
-var Space = require("@mock_models/spaces")
+var Shop = require("../mocks/models/shops")
+var Space = require("../mocks/models/spaces")
 
 // =======================
 // initialize models
