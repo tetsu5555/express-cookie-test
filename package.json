@@ -8,7 +8,8 @@
     "@root": ".",
     "@mocks_jsons": "./mocks/jsons",
     "@mock_models": "./mocks/models",
-    "@routes": "./routes"
+    "@routes": "./routes",
+    "@handlers": "./handlers"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
