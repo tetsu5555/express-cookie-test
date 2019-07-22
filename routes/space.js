@@ -1,7 +1,7 @@
 const { Router } = require('express')
 const router = Router()
 
-var spaces_handler = require("../handlers/spaces_handler")
+var spaces_handler = require("@handlers/spaces_handler")
 
 // =======================
 // =======================

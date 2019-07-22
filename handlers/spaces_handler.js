@@ -6,7 +6,7 @@ var spaces = require("../mocks/jsons/spaces.json");
 // =======================
 // import models
 // =======================
-var Space = require("../mocks/models/spaces")
+var Space = require("@mock_models/spaces")
 
 // =======================
 // initialize models

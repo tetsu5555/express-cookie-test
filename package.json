@@ -7,14 +7,12 @@
   },
   "jest": {
     "moduleNameMapper": {
-      "mocks_jsons/users.json": "<rootDir>/mocks/jsons/users.json",
-      "@mock_models/users": "<rootDir>/mocks/models/users.js",
-      "@routes": "<rootDir>/routes",
-      "@handlers": "<rootDir>/handlers"
+      "^@mock_models(.*)$": "<rootDir>/mocks/models$1",
+      "^@routes(.*)$": "<rootDir>/routes$1",
+      "^@handlers(.*)$": "<rootDir>/handlers$1"
     }
   },
   "_moduleAliases": {
-    "@mocks_jsons": "./mocks/jsons",
     "@mock_models": "./mocks/models",
     "@routes": "./routes",
     "@handlers": "./handlers"

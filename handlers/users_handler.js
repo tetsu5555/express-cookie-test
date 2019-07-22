@@ -6,7 +6,7 @@ var users = require("../mocks/jsons/users.json");
 // =======================
 // import models
 // =======================
-var User = require("../mocks/models/users")
+var User = require("@mock_models/users")
 
 // =======================
 // initialize models
