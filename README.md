@@ -58,6 +58,11 @@ npm run test
   - package.jsonに_moduleAliasesを登録
   - ファイルの先頭に`require('module-alias/register')`を記述することでエイリアスが有効になる
 
+## pakages
+- [express](https://github.com/expressjs/express)
+- [supertest](https://github.com/visionmedia/supertest)
+- [jest](https://github.com/facebook/jest)
+
 ## memo
 - https://scrapbox.io/for-share/Cookie
 
