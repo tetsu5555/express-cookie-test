@@ -44,6 +44,13 @@ node factory/<js-file-name>
 - all()
     - 全て要素を含むの配列を返す
 
+## path aliases
+- requireのpathについて[module-alias](https://www.npmjs.com/package/module-alias)というpackageを使っている
+  - package.jsonに_moduleAliasesを登録
+  - ファイルの先頭に`require('module-alias/register')`を記述することでエイリアスが有効になる
+
 ## memo
-https://scrapbox.io/for-share/Cookie
+- https://scrapbox.io/for-share/Cookie
+
+
 
