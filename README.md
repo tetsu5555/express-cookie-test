@@ -12,11 +12,14 @@ install packages
 npm install
 ```
 
+#### start server
 start server using nodemo
 
 ```
 npm start
 ```
+
+or
 
 start server without nodemon(no hot reloading)
 
@@ -24,11 +27,17 @@ start server without nodemon(no hot reloading)
 node server.js
 ```
 
-generate json data
+## generate json data
 
 ```
-node factory/<js-file-name>
+node mocks/factory/<js-file-name>
 // ~~.jsonを作成しましたと出ればおk
+```
+
+## test
+
+```
+npm run test
 ```
 
 ## add new data
