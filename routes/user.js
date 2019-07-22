@@ -7,12 +7,12 @@ const router = Router()
 // =======================
 // import constants
 // =======================
-var users = require("@jsons/users.json");
+var users = require("@mocks_jsons/users.json");
 
 // =======================
 // import models
 // =======================
-var User = require("@model/users")
+var User = require("@mock_models/users")
 
 // =======================
 // initialize models

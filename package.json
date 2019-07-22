@@ -6,8 +6,8 @@
   },
   "_moduleAliases": {
     "@root": ".",
-    "@jsons": "./jsons",
-    "@model": "./model",
+    "@mocks_jsons": "./mocks/jsons",
+    "@mock_models": "./mocks/models",
     "@routes": "./routes"
   },
   "dependencies": {

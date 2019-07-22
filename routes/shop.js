@@ -7,14 +7,14 @@ const router = Router()
 // =======================
 // import constants
 // =======================
-var shops = require("@jsons/shops.json");
-var spaces = require("@jsons/spaces.json");
+var shops = require("@mocks_jsons/shops.json");
+var spaces = require("@mocks_jsons/spaces.json");
 
 // =======================
 // import models
 // =======================
-var Shop = require("@model/shops")
-var Space = require("@model/spaces")
+var Shop = require("@mock_models/shops")
+var Space = require("@mock_models/spaces")
 
 // =======================
 // initialize models

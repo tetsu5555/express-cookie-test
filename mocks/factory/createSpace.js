@@ -17,6 +17,6 @@ for (let i = 0; i < maxLength; i++) {
     )
 }
 
-fs.writeFile('jsons/spaces.json', JSON.stringify(spaces), () => {
+fs.writeFile('@mocks_jsons/spaces.json', JSON.stringify(spaces), () => {
     console.log("spaces.jsonを作成しました");
 });

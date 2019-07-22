@@ -7,12 +7,12 @@ const router = Router()
 // =======================
 // import constants
 // =======================
-var spaces = require("@jsons/spaces.json");
+var spaces = require("@mocks_jsons/spaces.json");
 
 // =======================
 // import models
 // =======================
-var Space = require("@model/spaces")
+var Space = require("@mock_models/spaces")
 
 // =======================
 // initialize models
