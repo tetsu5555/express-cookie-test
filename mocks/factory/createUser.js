@@ -8,7 +8,7 @@ const maxLength = 100, max = 85, min = 16;
 for (let i = 0; i < maxLength; i++) {
     const name = faker.name.lastName() + ' ' + faker.name.firstName();
     users.push({
-        id: i + 1,
+        "id": i + 1,
         name: name,
         email: faker.internet.email(),
         telephone: faker.phone.phoneNumber(),
@@ -21,6 +21,6 @@ for (let i = 0; i < maxLength; i++) {
     })
 }
 
-fs.writeFile('@mocks_jsons/users.json', JSON.stringify(users), () => {
+fs.writeFile('mocks/jsons/users.json', JSON.stringify(users), () => {
     console.log("users.jsonを作成しました");
 });

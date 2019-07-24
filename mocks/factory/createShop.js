@@ -16,8 +16,8 @@ for (let i = 0; i < maxLength; i++) {
         "user_id": Math.floor(Math.random() * 100),
         "business_category_id": 1,
         "estimated_reach": Math.floor(Math.random() * 10000),
-        "inside_image": "aiueo.png",
-        "outside_image": "aiueo.png",
+        "inside_image": "inside.jpg",
+        "outside_image": "outside.jpg",
         "telephone": faker.phone.phoneNumber(),
         "seating_capacity": Math.floor(Math.random() * 100),
         "private_room_num": 10,
@@ -54,6 +54,6 @@ for (let i = 0; i < maxLength; i++) {
     })
 }
 
-fs.writeFile('@mocks_jsons/shops.json', JSON.stringify(shops), () => {
+fs.writeFile('mocks/jsons/shops.json', JSON.stringify(shops), () => {
     console.log("shops.jsonを作成しました");
 });
